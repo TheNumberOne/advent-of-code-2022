@@ -1,5 +1,5 @@
 {
-  description = "srid/haskell-template: Nix template for Haskell projects";
+  description = "srid/advent-of-code-2022: Nix template for Haskell projects";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -17,7 +17,7 @@
       perSystem = { self', config, pkgs, ... }: {
         haskellProjects.default = {
           packages = {
-            haskell-template.root = ./.;
+            advent-of-code-2022.root = ./.;
           };
           buildTools = hp: {
             inherit (pkgs)
@@ -34,7 +34,7 @@
             cabal-fmt
             fourmolu;
         };
-        packages.default = self'.packages.haskell-template;
+        packages.default = self'.packages.advent-of-code-2022;
       };
     };
 }

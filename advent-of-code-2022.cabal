@@ -1,10 +1,10 @@
 cabal-version:      2.4
-name:               haskell-template
+name:               advent-of-code-y2022
 version:            0.1.0.0
 license:            MIT
-copyright:          2022 Sridhar Ratnakumar
-maintainer:         srid@srid.ca
-author:             Sridhar Ratnakumar
+copyright:          2022 Rosetta Roberts
+maintainer:         1@thenumeral.one
+author:             Rosetta Roberts
 category:           Web
 
 -- TODO: Before hackage release.
@@ -61,6 +61,7 @@ common shared
     MultiWayIf
     NumericUnderscores
     OverloadedStrings
+    PartialTypeSignatures
     PolyKinds
     PostfixOperators
     RankNTypes
@@ -80,6 +81,7 @@ common shared
     , data-default
     , directory
     , filepath
+    , megaparsec
     , mtl
     , optics-core
     , profunctors
@@ -91,6 +93,18 @@ common shared
   hs-source-dirs:     src
   default-language:   Haskell2010
 
-executable haskell-template
+executable advent-of-code-2022-d1
   import:  shared
-  main-is: Main.hs
+  main-is: Day1.hs
+
+executable advent-of-code-2022-d2
+  import:  shared
+  main-is: Day2.hs
+
+executable advent-of-code-2022-d3
+  import:  shared
+  main-is: Day3.hs
+
+executable advent-of-code-2022-d4
+  import:  shared
+  main-is: Day4.hs

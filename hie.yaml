@@ -1,4 +1,13 @@
 cradle:
   cabal:
-    - path: "src"
-      component: "exe:haskell-template"
+    - path: "src/Day4.hs"
+      component: "advent-of-code-y2022:exe:advent-of-code-2022-d4"
+
+    - path: "src/Day3.hs"
+      component: "advent-of-code-y2022:exe:advent-of-code-2022-d3"
+
+    - path: "src/Day2.hs"
+      component: "advent-of-code-y2022:exe:advent-of-code-2022-d2"
+
+    - path: "src/Day1.hs"
+      component: "advent-of-code-y2022:exe:advent-of-code-2022-d1"
