@@ -1,6 +1,7 @@
 {
   description = "srid/advent-of-code-2022: Nix template for Haskell projects";
   inputs = {
+    check-flake.url = "github:srid/check-flake";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     haskell-flake.url = "github:srid/haskell-flake";
@@ -13,6 +14,7 @@
       imports = [
         inputs.haskell-flake.flakeModule
         inputs.treefmt-flake.flakeModule
+        inputs.check-flake.flakeModule
       ];
       perSystem = { self', config, pkgs, ... }: {
         haskellProjects.default = {
