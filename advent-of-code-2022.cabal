@@ -59,6 +59,7 @@ common shared
     LambdaCase
     MultiParamTypeClasses
     MultiWayIf
+    NamedFieldPuns
     NumericUnderscores
     OverloadedStrings
     PartialTypeSignatures
@@ -76,6 +77,7 @@ common shared
 
   build-depends:
     , aeson
+    , array
     , async
     , base          >=4.13.0.0 && <4.18.0.0.0
     , data-default
@@ -108,3 +110,7 @@ executable advent-of-code-2022-d3
 executable advent-of-code-2022-d4
   import:  shared
   main-is: Day4.hs
+
+executable advent-of-code-2022-d5
+  import:  shared
+  main-is: Day5.hs

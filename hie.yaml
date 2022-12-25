@@ -1,5 +1,8 @@
 cradle:
   cabal:
+    - path: "src/Day5.hs"
+      component: "advent-of-code-y2022:exe:advent-of-code-2022-d5"
+
     - path: "src/Day4.hs"
       component: "advent-of-code-y2022:exe:advent-of-code-2022-d4"
 
